@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Bill</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="third.css">
+</head>
+<body>
+    <main>
+        <div class="logo-container">
+            <img id="logo" src="https://adelinejune.github.io/hosted-access/logo.svg" alt="logo">
+        </div>
+        
+        <div class="calculator">
+            <div class="calculator-input">
+                <div class="bill">
+                    <h4>Bill</h4>
+                    <div class="input-section">
+                        <img src="https://adelinejune.github.io/hosted-access/icon-dollar.svg" alt="">
+                        <input class="bill-input" placeholder="0.00" type="number">
+                    </div>
+                </div>
+                <div class="tip">
+                    <h4>Select Tip %</h4>
+                    <div class="tip-container">
+                        <button class="tip-btn btn1" value="5">5%</button>
+                        <button class="tip-btn btn2" value="10">10%</button>
+                        <button class="tip-btn btn3" value="15">15%</button>
+                        <button class="tip-btn btn4" value="25">25%</button>
+                        <button class="tip-btn btn5" value="50">50%</button>
+                        <input placeholder="custom" class="tip-btn custom-tip" type="number">
+                    </div>
+                </div>
+                <div class="people">
+                    <h4>Number of People</h4>
+                    <div class="input-section">
+                        <img src="https://adelinejune.github.io/hosted-access/icon-person.svg" alt="">
+                        <input class="people-input" placeholder="0" type="number">
+                    </div>
+                </div>
+            </div>
+            <div class="calculator-result">
+                <div class="result-container">
+                    <div class="result">
+                        <div class="result-text">
+                            <h4>Tip</h4>
+                            <h5>Total</h5>
+                        </div>
+                        <div class="result-amount">
+                            <p class="total-tip">$0.00</p>
+                        </div>
+                    </div>
+                    <div class="result">
+                        <div class="result-text">
+                            <h4>Total</h4>
+                            <h5>/ person</h5>
+                        </div>
+                        <div class="result-amount">
+                            <p class="total-per-person">$0.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reset-container">
+                    <button class="reset-btn">reset</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="third.js"></script>
+</body>
+</html>
